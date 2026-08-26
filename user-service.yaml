@@ -2,11 +2,26 @@ server:
   port: 8081
 
 spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/unstray_users?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+#    username: root
+#    password: "@317Kns20020317"
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#public ip
   datasource:
-    url: jdbc:mysql://localhost:3306/unstray_users?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-    username: root
-    password: "@317Kns20020317"
+    url: jdbc:mysql://34.93.174.5:3306/unstray_users?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    username: kamesh
+    password: kns123
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+#private ip
+#  datasource:
+#    url: jdbc:mysql://10.50.80.3:3306/unstray_users?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+#    username: kamesh
+#    password: kns123
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -18,7 +33,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://10.160.0.3:8761/eureka/
   instance:
     prefer-ip-address: true
 

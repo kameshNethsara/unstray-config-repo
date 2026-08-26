@@ -23,15 +23,15 @@ spring:
 
 unstray:
   storage:
-    type: local # Options: 'local' or 'gcs'
+    type: gcs # Options: 'local' or 'gcs'
     local-dir: ./uploads # Directory where files will be saved locally
-    local-url-prefix: http://localhost:8083/uploads/ # Base URL to access local files
-    bucket-name: unstray-media-bucket # For GCP GCS deployment
+    local-url-prefix: http://10.160.0.3:8083/uploads/ # Base URL to access local files
+    bucket-name: media-bucket-317 # For GCP GCS deployment
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://10.160.0.3:8761/eureka/
   instance:
     prefer-ip-address: true
 
