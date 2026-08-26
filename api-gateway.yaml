@@ -11,9 +11,17 @@ spring:
             cors-configurations:
               '[/**]':
                 allowedOrigins:
+                  - "*"
                   - "http://10.160.0.3:5173"
+                  - "http://localhost:5173"
+                  - "http://127.0.0.1:5173"
+                  - "http://35.207.243.170:8888"
                 allowedOriginPatterns:
+                  - "*"
                   - "http://10.160.0.3:5173"
+                  - "http://localhost:5173"
+                  - "http://127.0.0.1:5173"
+                  - "http://35.207.243.170:8888"
                 allowedMethods:
                   - GET
                   - POST
