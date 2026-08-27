@@ -25,13 +25,13 @@ unstray:
   storage:
     type: gcs # Options: 'local' or 'gcs'
     local-dir: ./uploads # Directory where files will be saved locally
-    local-url-prefix: http://10.160.0.4:8083/uploads/ # Base URL to access local files
+    local-url-prefix: http://10.160.0.42:8083/uploads/ # Base URL to access local files
     bucket-name: media-bucket-317 # For GCP GCS deployment
 
 eureka:
   client:
     service-url:
-      defaultZone: http://10.160.0.4:8761/eureka/
+      defaultZone: http://10.160.0.42:8761/eureka/
   instance:
     prefer-ip-address: true
 
