@@ -3,8 +3,12 @@ server:
 
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://10.160.0.4:8761/eureka/,http://10.160.0.5:8761/eureka/,http://10.160.0.6:8761/eureka/
+  instance:
+    prefer-ip-address: true
 
 management:
   endpoints:
