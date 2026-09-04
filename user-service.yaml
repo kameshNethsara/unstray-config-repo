@@ -10,7 +10,7 @@ spring:
 
 #public ip
   datasource:
-    url: jdbc:mysql://34.93.174.5:3306/unstray_users?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    url: jdbc:mysql://35.200.130.185:3306/unstray_users?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
     username: kamesh
     password: kns123
     driver-class-name: com.mysql.cj.jdbc.Driver
